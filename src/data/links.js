@@ -22,7 +22,7 @@ export const links = {
   projects: {
     marsBotics: {
       liveDemo: "https://gmail-agent-black.vercel.app/",
-      github: "https://github.com/AbhiSondakar/REPO-NAME",
+      github: "https://github.com/AbhiSondakar/gmail-agent-",
       quickVerify: [
         {
           label: "Key file",
