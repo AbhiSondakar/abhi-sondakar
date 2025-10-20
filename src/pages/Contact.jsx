@@ -49,7 +49,7 @@ const Contact = () => {
               href={links.linkedin}
               target="_blank" 
               rel="noopener noreferrer"
-              className="magnetic-link social-link text-gray-500 dark:text-gray-400 hover:text-primary-accent transition duration-300"
+              className="text-gray-500 dark:text-gray-400 hover:text-primary-accent transition duration-300"
             >
               <span><span>🔗</span> LinkedIn</span>
             </a>
@@ -57,7 +57,7 @@ const Contact = () => {
               href={links.github}
               target="_blank" 
               rel="noopener noreferrer"
-              className="magnetic-link social-link text-gray-500 dark:text-gray-400 hover:text-primary-accent transition duration-300"
+              className="text-gray-500 dark:text-gray-400 hover:text-primary-accent transition duration-300"
             >
               <span><span>🐙</span> GitHub</span>
             </a>

@@ -51,7 +51,7 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition duration-300 font-medium ${
+                className={`nav-link text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition duration-300 font-medium ${
                   isActive(link.path) ? 'text-active active-underline' : ''
                 }`}
               >
@@ -62,7 +62,7 @@ const Header = () => {
             
             <Link
               to="/contact"
-              className={`text-primary-accent hover:text-teal-600 dark:hover:text-teal-300 transition duration-300 font-medium border-2 border-primary-accent rounded-lg px-3 py-1 ${
+              className={`dark:text-gray-500 dark:hover:text-teal-100 transition duration-300 font-medium border-2 border-primary-accent rounded-lg px-3 py-1 ${
                 isActive('/contact') ? 'bg-primary-accent text-gray-900 font-extrabold' : ''
               }`}
             >
