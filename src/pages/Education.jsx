@@ -45,7 +45,7 @@ const Education = () => {
             Data Analysis
           </span>
           <span className="px-4 py-2 bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300 rounded-lg text-sm font-medium text-center">
-            DataWarehouse and Datamining
+            Data Warehouse and Data Mining
           </span>
           <span className="px-4 py-2 bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-300 rounded-lg text-sm font-medium text-center">
             Operating Systems (OS)
