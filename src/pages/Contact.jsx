@@ -17,7 +17,7 @@ const Contact = () => {
           href={`mailto:${links.email}`}
           className="magnetic-link inline-block px-10 py-4 bg-primary-accent text-gray-900 font-extrabold text-lg rounded-xl shadow-2xl hover:bg-teal-300 transition duration-300 transform hover:scale-105"
         >
-          Email: {links.email}
+          Email Me
         </a>
         
         {/* Resume Link on Contact Page */}
