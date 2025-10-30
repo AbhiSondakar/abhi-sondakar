@@ -4,7 +4,7 @@ import { useTypingEffect } from '../hooks/useTypingEffect';
 import { links } from '../data/links';
 
 const Home = () => {
-  const typingRef = useTypingEffect("A focused Java Backend Developer building reliable systems with Spring Boot and AI/ML capabilities.", 60);
+  const typingRef = useTypingEffect("Full-Stack Developer focused on backend systems that are maintainable, testable, and production-ready.", 60);
 
   return (
     <section id="hero" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 flex flex-col md:flex-row items-center justify-between gap-12">
