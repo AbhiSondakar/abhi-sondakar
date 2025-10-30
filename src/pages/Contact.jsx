@@ -36,14 +36,6 @@ const Contact = () => {
           <p className="text-gray-500 dark:text-gray-400">
             <span>📍</span> Bengaluru, Karnataka
           </p>
-          <p>
-            <a 
-              href={`tel:${links.phone}`}
-              className="text-gray-500 dark:text-gray-400 hover:text-primary-accent transition duration-300"
-            >
-              <span>📞</span> {links.phone}
-            </a>
-          </p>
           <div className="flex justify-center space-x-6 pt-4 text-2xl">
             <a 
               href={links.linkedin}
