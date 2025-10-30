@@ -9,7 +9,6 @@ export const links = {
   
   // Contact information
   email: "abhisondakar@gmail.com",
-  phone: "+919019185043",
   
   // Certificate links
   certificates: {
