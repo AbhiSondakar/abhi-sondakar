@@ -1,7 +1,7 @@
 // Centralized links configuration for the portfolio
 export const links = {
   // Resume links
-  resume: "https://drive.google.com/file/d/1Yk5hSQU8H4AazlNNGYEISqiDeVT8-__E/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1MuSRpReU6G6xmoK-Rfd879mvVPWkGqBO/view?usp=sharing",
   
   // Social media links
   linkedin: "https://linkedin.com/in/AbhiSondakar",
