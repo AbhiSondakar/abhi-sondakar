@@ -117,6 +117,22 @@ const Education = () => {
               </p>
             </div>
           </a>
+
+          <a
+            href={links.certificates.networkingBasics}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block reveal-on-scroll"
+            style={{ transitionDelay: '450ms' }}
+          >
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-primary-accent/30 transition-shadow duration-300 h-full">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Computer Networking Basics</h4>
+              <p className="text-primary-accent text-sm font-medium mb-3">Cisco</p>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                Comprehensive understanding of fundamental networking concepts, protocols, and network infrastructure.
+              </p>
+            </div>
+          </a>
         </div>
       </section>
 
