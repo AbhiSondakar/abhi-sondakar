@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <h2 className="animated-header text-5xl font-extrabold text-center mb-16 text-primary-accent">Academic Profile & Achievements</h2>
-      
+
       <section id="education-details" className="mb-16">
         <h3 className="animated-header text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">Formal Education</h3>
         <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 mx-auto max-w-3xl reveal-on-scroll">
@@ -31,7 +31,7 @@ const Education = () => {
           </div>
         </div>
       </section>
-      
+
       <section id="core-subjects" className="mb-20">
         <h3 className="animated-header text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">Core Subjects Studied</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto reveal-on-scroll">
@@ -67,13 +67,13 @@ const Education = () => {
           </span>
         </div>
       </section>
-      
+
       <section id="certificates" className="mb-20">
         <h3 className="animated-header text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">Certificates & Achievements</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          <a 
+          <a
             href={links.certificates.javaProgramming}
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
             className="block reveal-on-scroll"
           >
@@ -85,12 +85,12 @@ const Education = () => {
               </p>
             </div>
           </a>
-          
-          <a 
+
+          <a
             href={links.certificates.agenticAI}
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
-            className="block reveal-on-scroll" 
+            className="block reveal-on-scroll"
             style={{ transitionDelay: '150ms' }}
           >
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-primary-accent/30 transition-shadow duration-300 h-full">
@@ -101,12 +101,12 @@ const Education = () => {
               </p>
             </div>
           </a>
-          
-          <a 
+
+          <a
             href={links.certificates.cypherQuest}
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
-            className="block reveal-on-scroll" 
+            className="block reveal-on-scroll"
             style={{ transitionDelay: '300ms' }}
           >
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-primary-accent/30 transition-shadow duration-300 h-full">
@@ -117,20 +117,36 @@ const Education = () => {
               </p>
             </div>
           </a>
+
+          <a
+            href={links.certificates.networkingBasics}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block reveal-on-scroll"
+            style={{ transitionDelay: '450ms' }}
+          >
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-primary-accent/30 transition-shadow duration-300 h-full">
+              <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Computer Networking Basics</h4>
+              <p className="text-primary-accent text-sm font-medium mb-3">Cisco</p>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                Comprehensive understanding of fundamental networking concepts, protocols, and network infrastructure.
+              </p>
+            </div>
+          </a>
         </div>
       </section>
-      
+
       <section id="languages">
         <h3 className="animated-header text-4xl font-bold text-center mb-10 text-gray-900 dark:text-white">Languages</h3>
         <div className="flex flex-wrap justify-center gap-6 max-w-xl mx-auto reveal-on-scroll">
           <span className="px-6 py-3 bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300 rounded-full text-lg font-semibold shadow-md">
-            🇬🇧 English (Fluent)
+            🇬🇧 English
           </span>
           <span className="px-6 py-3 bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 rounded-full text-lg font-semibold shadow-md">
-            🇮🇳 Hindi (Native)
+            🇮🇳 Hindi
           </span>
           <span className="px-6 py-3 bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 rounded-full text-lg font-semibold shadow-md">
-            🇮🇳 Kannada (Proficient)
+            🇮🇳 Kannada
           </span>
         </div>
       </section>
