@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { projectData } from '../data/projectData';
+import ImageGallery from '../components/ImageGallery';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
@@ -46,21 +47,16 @@ const ProjectDetail = () => {
         </svg>
         Back to Work & Skills
       </Link>
-      
+
       <header className="text-center mb-12">
-        <h1 className="animated-header text-5xl md:text-6xl font-extrabold mb-4 text-primary-accent">
+        <h1 className="animated-header text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-primary-accent px-4 break-words">
           {project.title}
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400">{project.role}</p>
+        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 px-4">{project.role}</p>
       </header>
-      
+
       <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 reveal-on-scroll">
-        <img
-          src={project.screenshot}
-          alt={`${project.title} Screenshot`}
-          className="w-full h-auto rounded-xl mb-12 shadow-lg object-cover"
-        />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Project Highlights</h3>
@@ -68,14 +64,16 @@ const ProjectDetail = () => {
               <strong>Role:</strong> {project.role}
             </p>
             <div className="space-y-3">
-              <a
-                href={project.liveDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="magnetic-link block w-full text-center px-4 py-2 bg-primary-accent text-gray-900 font-bold rounded-lg hover:bg-teal-300 transition"
-              >
-                Live Demo &rarr;
-              </a>
+              {project.liveDemo && project.liveDemo !== '#' && (
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="magnetic-link block w-full text-center px-4 py-2 bg-primary-accent text-gray-900 font-bold rounded-lg hover:bg-teal-300 transition"
+                >
+                  Live Demo &rarr;
+                </a>
+              )}
               <a
                 href={project.github}
                 target="_blank"
@@ -86,7 +84,7 @@ const ProjectDetail = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Context & Results</h3>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
@@ -97,7 +95,7 @@ const ProjectDetail = () => {
             </p>
           </div>
         </div>
-        
+
         <div className="mb-10">
           <h3 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white border-b pb-2 border-primary-accent/50">
             Technical Approach
@@ -106,11 +104,14 @@ const ProjectDetail = () => {
           <h4 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Technologies Used:</h4>
           <div className="flex flex-wrap gap-3">{techBadges}</div>
         </div>
-        
-        <div className="border-t pt-6 border-gray-200 dark:border-gray-700">
-          <h4 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Quick Verification Links:</h4>
-          <div className="flex flex-wrap gap-6">{quickVerifyLinks}</div>
-        </div>
+
+
+        {/* Show ImageGallery at the bottom if screenshots array exists */}
+        {project.screenshots && project.screenshots.length > 0 && (
+          <div className="border-t pt-8 border-gray-200 dark:border-gray-700">
+            <ImageGallery images={project.screenshots} title="App Screenshots" />
+          </div>
+        )}
       </div>
     </div>
   );

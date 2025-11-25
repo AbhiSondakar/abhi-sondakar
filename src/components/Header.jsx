@@ -20,7 +20,7 @@ const Header = () => {
 
   const navLinks = [
     { path: '/', label: 'Home', id: 'nav-home' },
-    { path: '/work', label: 'Work & Skills', id: 'nav-work' },
+    { path: '/work', label: 'My Work', id: 'nav-work' },
     { path: '/education', label: 'Education', id: 'nav-education' },
   ];
 
@@ -51,24 +51,22 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition duration-300 font-medium ${
-                  isActive(link.path) ? 'text-active active-underline' : ''
-                }`}
+                className={`nav-link text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition duration-300 font-medium ${isActive(link.path) ? 'text-active active-underline' : ''
+                  }`}
               >
                 {link.label}
               </Link>
             ))}
-            
-            
+
+
             <Link
               to="/contact"
-              className={`dark:text-gray-500 dark:hover:text-teal-100 transition duration-300 font-medium border-2 border-primary-accent rounded-lg px-3 py-1 ${
-                isActive('/contact') ? 'bg-primary-accent text-gray-900 font-extrabold' : ''
-              }`}
+              className={`dark:text-gray-500 dark:hover:text-teal-100 transition duration-300 font-medium border-2 border-primary-accent rounded-lg px-3 py-1 ${isActive('/contact') ? 'bg-primary-accent text-gray-900 font-extrabold' : ''
+                }`}
             >
               Contact
             </Link>
-            
+
             <ThemeToggle />
           </nav>
 
@@ -96,16 +94,15 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition duration-300 ${
-                  isActive(link.path) ? 'text-active active-underline' : ''
-                }`}
+                className={`nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white transition duration-300 ${isActive(link.path) ? 'text-active active-underline' : ''
+                  }`}
                 onClick={toggleMobileMenu}
               >
                 {link.label}
               </Link>
             ))}
-            
-            
+
+
             <Link
               to="/contact"
               className="block px-3 py-2 rounded-md text-base font-medium text-primary-accent hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-teal-600 dark:hover:text-teal-300 transition duration-300"

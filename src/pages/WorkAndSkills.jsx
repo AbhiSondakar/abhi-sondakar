@@ -8,9 +8,9 @@ const WorkAndSkills = () => {
         <h2 className="animated-header text-4xl font-bold text-center mb-12 text-primary-accent">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="project-card reveal-on-scroll bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-primary-accent/40 transition-all duration-500 relative border border-gray-200 dark:border-gray-700 group hover:-translate-y-2">
-            <img 
-              src="https://placehold.co/600x400/0d9488/ffffff?text=MARS-Botics+AI+Agent" 
-              alt="AI Mail Agent" 
+            <img
+              src="https://placehold.co/600x400/0d9488/ffffff?text=MARS-Botics+AI+Agent"
+              alt="AI Mail Agent"
               className="w-full h-56 object-cover transition duration-500 group-hover:opacity-90"
             />
             <div className="p-6">
@@ -31,59 +31,65 @@ const WorkAndSkills = () => {
               </Link>
             </div>
           </div>
-          
-          <div 
-            className="project-card reveal-on-scroll bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-primary-accent/40 transition-all duration-500 relative border border-gray-200 dark:border-gray-700 group hover:-translate-y-2" 
+
+          <div
+            className="project-card reveal-on-scroll bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-primary-accent/40 transition-all duration-500 relative border border-gray-200 dark:border-gray-700 group hover:-translate-y-2"
             style={{ transitionDelay: '150ms' }}
           >
-            <img 
-              src="https://placehold.co/600x400/292524/ffffff?text=Reactive+Backend" 
-              alt="Data Visualization Dashboard" 
+            <img
+              src="https://placehold.co/600x400/4c1d95/ffffff?text=NLIDB"
+              alt="NLP Powered Conversational Assistant to Database"
               className="w-full h-56 object-cover transition duration-500 group-hover:opacity-90"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Reactive API Gateway</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">NLP Powered Conversational Assistant to Database</h3>
               <p className="text-gray-500 dark:text-gray-400 mb-4">
-                A high-throughput API layer using reactive principles for efficient data flow and low latency.
+                A system that translates natural language questions into SQL queries for easier database interaction.
               </p>
               <ul className="list-disc list-inside text-sm text-gray-500 dark:text-gray-400 mb-6 ml-4 space-y-1">
-                <li>Implemented using Spring WebFlux (Reactive Programming).</li>
-                <li>Secured with Spring Security, JWT, and OAuth2.</li>
-                <li>Utilizes Kafka for asynchronous messaging between services.</li>
+                <li>Natural Language Processing for query understanding.</li>
+                <li>Machine learning for query pattern recognition.</li>
+                <li>SQL generation with database schema awareness.</li>
               </ul>
-              <button className="magnetic-link block w-full text-center px-4 py-2 bg-primary-accent text-gray-900 font-bold rounded-lg hover:bg-teal-300 transition duration-300">
+              <Link
+                to="/project/nlidb"
+                className="magnetic-link block w-full text-center px-4 py-2 bg-primary-accent text-gray-900 font-bold rounded-lg hover:bg-teal-300 transition duration-300"
+              >
                 Know More &rarr;
-              </button>
+              </Link>
             </div>
           </div>
-          
-          <div 
-            className="project-card reveal-on-scroll bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-primary-accent/40 transition-all duration-500 relative border border-gray-200 dark:border-gray-700 group hover:-translate-y-2" 
+
+          <div
+            className="project-card reveal-on-scroll bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-primary-accent/40 transition-all duration-500 relative border border-gray-200 dark:border-gray-700 group hover:-translate-y-2"
             style={{ transitionDelay: '300ms' }}
           >
-            <img 
-              src="https://placehold.co/600x400/4c7c8c/ffffff?text=Data+System" 
-              alt="Data Management System" 
+            <img
+              src="https://placehold.co/600x400/3b82f6/ffffff?text=Todo+App"
+              alt="Modern Todo Application"
               className="w-full h-56 object-cover transition duration-500 group-hover:opacity-90"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Data Persistence Layer</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">Modern Todo Application</h3>
               <p className="text-gray-500 dark:text-gray-400 mb-4">
-                A robust data management system following the MVC pattern for clarity and maintainability.
+                A feature-rich task management application with real-time updates and collaborative features.
               </p>
               <ul className="list-disc list-inside text-sm text-gray-500 dark:text-gray-400 mb-6 ml-4 space-y-1">
-                <li>Used Spring Data JPA and Hibernate for database interaction.</li>
-                <li>Supported databases include PostgreSQL, MySQL, and MongoDB.</li>
-                <li>Managed deployment via Docker containers.</li>
+                <li>Real-time updates using Socket.io for collaborative tasks.</li>
+                <li>Responsive design with TailwindCSS and React components.</li>
+                <li>MongoDB for data persistence and Express backend API.</li>
               </ul>
-              <button className="magnetic-link block w-full text-center px-4 py-2 bg-primary-accent text-gray-900 font-bold rounded-lg hover:bg-teal-300 transition duration-300">
+              <Link
+                to="/project/todo-app"
+                className="magnetic-link block w-full text-center px-4 py-2 bg-primary-accent text-gray-900 font-bold rounded-lg hover:bg-teal-300 transition duration-300"
+              >
                 Know More &rarr;
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      
+
       <section id="skills" className="bg-gray-100/50 dark:bg-gray-800/20 py-20 border-t border-b border-gray-200 dark:border-gray-700 mt-12">
         <h2 className="animated-header text-4xl font-bold text-center mb-12 text-primary-accent">Comprehensive Skill Set</h2>
         <div className="max-w-6xl mx-auto space-y-12 px-4">
@@ -107,7 +113,7 @@ const WorkAndSkills = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 reveal-on-scroll">
             <h3 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white border-b pb-3 border-primary-accent/50">Backend & AI Frameworks</h3>
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start stagger-container reveal-on-scroll">
@@ -119,7 +125,7 @@ const WorkAndSkills = () => {
               <span className="skill-tag bg-teal-100 text-teal-800 dark:bg-teal-900 dark:text-teal-300 px-4 py-2 rounded-full font-medium">React (Frontend)</span>
             </div>
           </div>
-          
+
           <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 reveal-on-scroll">
             <h3 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white border-b pb-3 border-primary-accent/50">Data & Messaging</h3>
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start stagger-container reveal-on-scroll">
@@ -131,7 +137,7 @@ const WorkAndSkills = () => {
               <span className="skill-tag bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 px-4 py-2 rounded-full font-medium">RabbitMQ</span>
             </div>
           </div>
-          
+
           <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 reveal-on-scroll">
             <h3 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white border-b pb-3 border-primary-accent/50">Development & Concepts</h3>
             <div className="flex flex-wrap gap-4 justify-center sm:justify-start stagger-container reveal-on-scroll">
